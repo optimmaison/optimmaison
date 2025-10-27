@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Optim'Maison — Aménagement intérieur & extérieur</title>
+  <meta name="description" content="Optim'Maison — Aménagement intérieur et extérieur à Biscarrosse. Du dressing à la terrasse, le beau devient accessible." />
+  <style>
+    :root{
+      --bg:#f6efe6; /* beige clair */
+      --wood-1: #e9d9c7;
+      --accent: #b33; /* rouge brique */
+      --text:#2b2b2b;
+      --muted:#6b6b6b;
+      --card:#fff;
+      font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+    html,body{height:100%;}
+    body{margin:0;background:var(--bg);color:var(--text);-webkit-font-smoothing:antialiased;}
+    header{display:flex;align-items:center;gap:18px;padding:28px 20px;border-bottom:1px solid rgba(0,0,0,0.05);}
+    /* Logo box */
+    .logo{display:flex;align-items:center;gap:12px}
+    .logo svg{width:76px;height:56px}
+    .brand{font-weight:700;font-size:20px;letter-spacing:0.4px}
+    .tag{font-size:12px;color:var(--muted)}
+
+    main{max-width:1100px;margin:28px auto;padding:0 18px}
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:24px;align-items:center}
+    .hero .left{padding:20px}
+    h1{margin:0;font-size:34px;line-height:1.05}
+    p.lead{color:var(--muted);margin-top:12px}
+
+    .contact-card{background:linear-gradient(180deg, rgba(255,255,255,0.9), rgba(255,255,255,0.85));border-radius:12px;padding:18px;box-shadow:0 6px 18px rgba(30,30,30,0.06);}
+    .tel{display:flex;gap:10px;align-items:center;font-weight:600;color:var(--accent);}
+    .small{font-size:13px;color:var(--muted);margin-top:6px}
+
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:20px}
+    .card{background:var(--card);border-radius:10px;padding:12px;min-height:120px;display:flex;flex-direction:column;gap:8px;justify-content:center;box-shadow:0 3px 10px rgba(0,0,0,0.04)}
+    .card h3{margin:0;font-size:16px}
+    .card p{margin:0;color:var(--muted);font-size:13px}
+
+    .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:20px}
+    .gallery .thumb{height:120px;border-radius:8px;background:linear-gradient(135deg,#fff,#f3efe8);display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:13px}
+
+    footer{max-width:1100px;margin:30px auto;padding:18px;color:var(--muted);font-size:13px}
+
+    /* Responsive */
+    @media (max-width:900px){
+      .hero{grid-template-columns:1fr}
+      .grid{grid-template-columns:repeat(2,1fr)}
+      .gallery{grid-template-columns:repeat(2,1fr)}
+    }
+    @media (max-width:520px){
+      header{padding:16px}
+      .logo svg{width:56px;height:42px}
+      .brand{font-size:18px}
+      h1{font-size:22px}
+      .grid{grid-template-columns:1fr}
+      .gallery{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo" aria-hidden="true">
+      <!-- Inline SVG logo (red house with wood fill) -->
+      <svg viewBox="0 0 140 100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Logo Optim'Maison">
+        <defs>
+          <pattern id="wood" patternUnits="userSpaceOnUse" width="6" height="6">
+            <rect width="6" height="6'" fill="#e6d3bd" />
+            <path d="M0 3h6" stroke="#d6c0a6" stroke-width="1" stroke-linecap="round" />
+          </pattern>
+        </defs>
+        <!-- house outline -->
+        <g transform="translate(8,6)">
+          <polygon points="60,4 14,36 14,76 106,76 106,36" fill="url(#wood)" />
+          <polygon points="60,4 14,36 106,36" fill="none" stroke="var(--accent)" stroke-width="6" stroke-linejoin="round" />
+          <rect x="40" y="44" width="40" height="28" rx="3" fill="var(--accent)" opacity="0.08" />
+          <rect x="48" y="52" width="24" height="18" rx="2" fill="var(--accent)" />
+        </g>
+      </svg>
+    </div>
+    <div>
+      <div class="brand">OPTIM'MAISON</div>
+      <div class="tag">Aménagement intérieur & extérieur — Biscarrosse</div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="left">
+        <h1>Du dressing à la terrasse,<br/>le beau devient accessible</h1>
+        <p class="lead">Optim'Maison conçoit et réalise des aménagements intérieurs et extérieurs pensés pour les petits et moyens budgets. Dressings, cuisines, terrasses, pergolas et clôtures — simples, chaleureux, durables.</p>
+
+        <div class="grid" aria-hidden="false">
+          <div class="card">
+            <h3>Dressing optimisé</h3>
+            <p>Solutions modulaires pour petits espaces et rangements malins.</p>
+          </div>
+          <div class="card">
+            <h3>Cuisines pratiques</h3>
+            <p>Réagencement et revalorisation à budget maîtrisé.</p>
+          </div>
+          <div class="card">
+            <h3>Terrasses & pergolas</h3>
+            <p>Structures simples et durables pour profiter de l'extérieur.</p>
+          </div>
+        </div>
+
+        <div class="gallery" aria-hidden="true">
+          <div class="thumb">Photo projet 1</div>
+          <div class="thumb">Photo projet 2</div>
+          <div class="thumb">Photo projet 3</div>
+        </div>
+      </div>
+
+      <aside>
+        <div class="contact-card">
+          <div class="tel">📞 06 56 81 91 37</div>
+          <div class="small">✉️ optim.maison@gmail.com</div>
+          <div class="small" style="margin-top:8px">Interventions : Biscarrosse & alentours</div>
+          <div style="margin-top:12px">
+            <a href="#contact" style="display:inline-block;padding:10px 14px;border-radius:8px;background:var(--accent);color:#fff;text-decoration:none;font-weight:600">Demander un devis</a>
+          </div>
+        </div>
+
+        <div style="margin-top:14px;font-size:13px;color:var(--muted)">
+          <strong>Services rapides :</strong>
+          <ul style="padding-left:18px;margin:8px 0 0;color:var(--muted)">
+            <li>Conseil 3D & plan</li>
+            <li>Pose & coordination</li>
+            <li>Réaménagement économique</li>
+          </ul>
+        </div>
+      </aside>
+
+    </section>
+
+    <section id="contact" style="margin-top:26px">
+      <h2 style="font-size:18px;margin-bottom:8px">Contact & demande de devis</h2>
+      <p class="small">Remplis ce court formulaire et je te recontacte rapidement pour un premier échange (ou contacte directement par téléphone).</p>
+      <form style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px;max-width:700px">
+        <input placeholder="Nom" aria-label="Nom" style="padding:10px;border-radius:8px;border:1px solid rgba(0,0,0,0.1)" />
+        <input placeholder="Téléphone" aria-label="Téléphone" style="padding:10px;border-radius:8px;border:1px solid rgba(0,0,0,0.1)" />
+        <input placeholder="E-mail" aria-label="E-mail" style="padding:10px;border-radius:8px;border:1px solid rgba(0,0,0,0.1);grid-column:1/3" />
+        <textarea placeholder="Décris ton projet (court)" aria-label="Projet" style="padding:10px;border-radius:8px;border:1px solid rgba(0,0,0,0.1);grid-column:1/3;height:90px"></textarea>
+        <button type="submit" style="grid-column:1/3;padding:12px;border-radius:10px;border:0;background:var(--accent);color:#fff;font-weight:700">Envoyer ma demande</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    Optim'Maison — Aménagement intérieur & extérieur • Biscarrosse • 📞 06 56 81 91 37 • ✉️ optim.maison@gmail.com
+  </footer>
+</body>
+</html>
